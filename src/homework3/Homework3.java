@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Homework3 {
     public static void main(String[] args) {
 //ЗАДАНИЕ 1
-        int[] num = {-15, 64, -81, 99, 53, -7};//99-3,-7=5
+        int[] num = {15, 64, 81, 99, 53, 7};//99-3,-7=5
         int Element = num[5];
         num[5] = num[3];
         num[3] = Element;
@@ -16,7 +16,7 @@ public class Homework3 {
         int[][] twoMass = new int[N][];
         Arrays.sort(oneMass);
         for (int i = 0; i < N; i++)
-            twoMass[i] = Arrays.copyOfRange(oneMass, i * oneMass.length / N, (i + 1) * oneMass.length / N);
+        twoMass[i] = Arrays.copyOfRange(oneMass, i * oneMass.length / N, (i + 1) * oneMass.length / N);
         System.out.println(Arrays.deepToString(twoMass));
 //ЗАДАНИЕ 3
         int[] Mass = {-6, 10, 56, -44, 2, -9};
@@ -27,9 +27,8 @@ public class Homework3 {
         System.out.println(Arrays.toString(CopyArr));
 //ЗАДАНИЕ 4
         int[] newMass = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-        for (int i = newMass.length - 1; i >= 0; i--) {
-        System.out.println(newMass[i]);
-        }
+        for (int i = newMass.length - 1; i >= 0; i--);
+        System.out.println(newMass);
 //ЗАДАНИЕ 5
         int am=0, a0=0, a1=0;
         int[] Mas = new int[11];
