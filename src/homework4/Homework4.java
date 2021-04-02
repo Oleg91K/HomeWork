@@ -4,6 +4,23 @@ import java.util.Scanner;
 
 public class Homework4 {
     public static void main(String[] args) {
+//ЗАДАНИЕ 1
+/*Создание массива String [n]
+Scanner scanner = new Scanner((System.in));
+while (true){
+//запрос на ввод слова
+String userStr =scanner.nextLine();
+//проверка exit -> выход из цикла
+    for (int i = 0; i < ; i++) {
+//проверка на идентичность ->выход из цикла
+//добавление элемента вместо null
+ссылка == null
+    }
+//проверка на идентичность ->выход из цикла
+    ["cat","dog","rabbit",null]
+    }
+}
+*/
 //ЗАДАНИЕ 4
         Scanner in = new Scanner(System.in);
         String user = in.toString();
