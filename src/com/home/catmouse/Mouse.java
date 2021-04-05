@@ -10,4 +10,11 @@ public class Mouse {
     public int getSpeedMouse() {
         return speedMouse;
     }
+
+    @Override
+    public String toString() {
+        return "Mouse{" +
+                "speedMouse=" + speedMouse +
+                '}';
+    }
 }

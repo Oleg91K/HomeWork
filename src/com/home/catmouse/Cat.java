@@ -1,6 +1,8 @@
 package com.home.catmouse;
 
 
+import java.util.Arrays;
+
 public class Cat {
     private String name;
     private String color;
@@ -9,11 +11,7 @@ public class Cat {
     private Mouse[] mouse;{
     }
 
-    public Cat(int speedCat, int weight, int mouseCount) {
-        this.speedCat = speedCat;
-        this.weight = weight;
-        mouse = new Mouse[mouseCount];
-    }
+
 
 
     public void setName(String name) {
@@ -24,7 +22,16 @@ public class Cat {
         this.color = color;
     }
 
-
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", speedCat=" + speedCat +
+                ", weight=" + weight +
+                ", mouse=" + Arrays.toString(mouse) +
+                '}';
+    }
 }
 
 
