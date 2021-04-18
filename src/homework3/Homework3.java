@@ -4,14 +4,60 @@ import java.util.Arrays;
 
 public class Homework3 {
     public static void main(String[] args) {
+
 //ЗАДАНИЕ 1
+        /*
+        Задан одномерный массив целых чисел
+        Поменять местами минимальный и максимальный элементы
+         */
         int[] num = {15, 64, 81, 99, 53, 7};//99-3,-7=5
         int Element = num[5];
         num[5] = num[3];
         num[3] = Element;
         System.out.println(Arrays.toString(num));
 //ЗАДАНИЕ 2
-        int[] oneMass = {76, 83, 91, 69, 44, 55, 2, 17, 8, 53};
+        /*
+        Создать одномерный массив типа int на 20 элементов.
+         Заполнить его рандомными значениями от 3 до 500.
+         Поменять местами минимальный и максимальный элементы .
+         */
+        int[]mass= new int[20];
+        for (int i = 0; i < mass.length; i++) {
+            mass[i]=(int)(3+Math.random()*497);
+            System.out.println(Arrays.toString(mass));
+        }
+ //ЗАДАНИЕ 3
+ /*
+ Дан массив целых чисел [78, 32, 76, 100, 0, 6301, 331, 77, 24, 2, 90] .
+ Образуйте из него два отсортированных по возрастанию, данные четные и нечетные числа.
+  */
+int[]mass2={78,32,76,100,0,6301,331,77,24,2,90};
+        for (int i = 0; i < mass2.length ; i++) {
+            if(mass2[i]%2==0);{
+                i++;
+            }
+        }
+        System.out.println(Arrays.toString(mass2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*int[] oneMass = {76, 83, 91, 69, 44, 55, 2, 17, 8, 53};
         int N = 2;
         int[][] twoMass = new int[N][];
         Arrays.sort(oneMass);
@@ -47,6 +93,8 @@ public class Homework3 {
         System.out.println("Чаще всего встречается 1");
             }
         }
+
+         */
     }
 }
 
