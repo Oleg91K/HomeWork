@@ -1,4 +1,4 @@
-package com.home.work5storage;
+package com.home.OOP.storage;
 
 public class Book {
     private String title;

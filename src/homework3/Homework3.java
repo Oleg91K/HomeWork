@@ -7,8 +7,9 @@ public class Homework3 {
 
 //ЗАДАНИЕ 1
         /*
-        Задан одномерный массив целых чисел
-        Поменять местами минимальный и максимальный элементы
+       1. Создать одномерный массив типа int на 20 элементов.
+       Заполнить его рандомными значениями от 3 до 500.
+       Поменять местами минимальный и максимальный элементы.
          */
         int[] num = {15, 64, 81, 99, 53, 7};//99-3,-7=5
         int Element = num[5];
@@ -31,51 +32,36 @@ public class Homework3 {
  Дан массив целых чисел [78, 32, 76, 100, 0, 6301, 331, 77, 24, 2, 90] .
  Образуйте из него два отсортированных по возрастанию, данные четные и нечетные числа.
   */
-int[]mass2={78,32,76,100,0,6301,331,77,24,2,90};
-        for (int i = 0; i < mass2.length ; i++) {
-            if(mass2[i]%2==0);{
-                i++;
+        int[] srcArray3 = {-321, 894, -45, 782, -29, 12, -88};
+        int minus = 0;
+        for (int element : srcArray3) {
+            if (element < 0) {
+                ++minus;
             }
         }
-        System.out.println(Arrays.toString(mass2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*int[] oneMass = {76, 83, 91, 69, 44, 55, 2, 17, 8, 53};
-        int N = 2;
-        int[][] twoMass = new int[N][];
-        Arrays.sort(oneMass);
-        for (int i = 0; i < N; i++)
-        twoMass[i] = Arrays.copyOfRange(oneMass, i * oneMass.length / N, (i + 1) * oneMass.length / N);
-        System.out.println(Arrays.deepToString(twoMass));
-//ЗАДАНИЕ 3
-        int[] Mass = {-6, 10, 56, -44, 2, -9};
-        Mass = new int[]{-6, -44, -9};
-        int[] CopyArr = new int[3];
-        System.arraycopy(Mass, 0, CopyArr, 0, 3);
-        Arrays.sort(CopyArr);
-        System.out.println(Arrays.toString(CopyArr));
+        int[] minusArray = new int[minus];
+        minus = 0;
+        for (int element : srcArray3) {
+            if (element < 0) {
+                minusArray[minus] = element;
+                ++minus;
+            }
+        }
+        System.out.println("Исходный массив " + Arrays.toString(srcArray3));
+        System.out.println("Отрицательный массив " + Arrays.toString(minusArray));
 //ЗАДАНИЕ 4
+        /*
+         4. Создать массив из чётных чисел [2, 4, 6, 8, 10, 12 ... 18, 20]
+         и вывести элементы массива в консоль в обратном порядке (20 18 16 ... 4 2)
+         */
         int[] newMass = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
         for (int i = newMass.length - 1; i >= 0; i--);
         System.out.println(newMass);
 //ЗАДАНИЕ 5
+        /*
+         Создать массив из 11 случайных целых чисел из отрезка [-1;1], вывести массив в консоль.
+ Определить какой элемент встречается в массиве чаще всего и вывести информацию об этом в консоль.
+         */
         int am=0, a0=0, a1=0;
         int[] Mas = new int[11];
         for(int i=0; i<Mas.length; i++){
@@ -94,7 +80,6 @@ int[]mass2={78,32,76,100,0,6301,331,77,24,2,90};
             }
         }
 
-         */
     }
 }
 
